@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_50sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingTop="@dimen/_10sdp"
+    android:paddingBottom="@dimen/_10sdp"
+    android:paddingEnd="@dimen/_15sdp"
+    android:paddingStart="@dimen/_15sdp"
+    android:background="@drawable/back_list_item"
+    android:layout_marginBottom="@dimen/_10sdp"
+    android:id="@+id/taskRowRelative">
+
+    <CheckBox
+        android:id="@+id/taskCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_alignParentStart="true"
+        android:gravity="center"
+        tools:ignore="RtlCompat"
+        android:buttonTint="#FD7A07"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/taskName"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toEndOf="@+id/taskCheck"
+        android:layout_centerInParent="true"
+        android:textColor="@color/black"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:textSize="@dimen/_14ssp"
+        android:hint="Create new task here"
+        tools:ignore="RtlCompat"
+        android:gravity="center"
+        android:textAlignment="textStart"
+        android:background="@null"/>
+
+</RelativeLayout>

@@ -1,0 +1,109 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="fragments.SingUpFragment"
+    android:background="@drawable/gradient_layout"
+    android:orientation="vertical"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_marginTop="@dimen/_100sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Create Profile to\nStart your first\nToDoList"
+            android:textSize="@dimen/_22ssp"
+            android:textAlignment="center"
+            android:gravity="center_horizontal"
+            android:textColor="@color/white"
+            />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:hint="your name"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14ssp"
+            android:padding="@dimen/_13sdp"
+            android:alpha="0.7"
+            android:background="@drawable/backeground_edit_text"
+            android:inputType="textPersonName"
+            />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/singUpPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:hint="Password"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14ssp"
+            android:padding="@dimen/_13sdp"
+            android:alpha="0.7"
+            android:background="@drawable/backeground_edit_text"
+            android:inputType="textPassword"
+            android:password="true"
+            />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/singUpEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:hint="Your email address"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14ssp"
+            android:padding="@dimen/_13sdp"
+            android:alpha="0.7"
+            android:background="@drawable/backeground_edit_text"
+            android:inputType="textEmailAddress"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Create your profile"
+            android:background="@drawable/gradient"
+            android:gravity="center"
+            android:textSize="@dimen/_15ssp"
+            android:layout_marginTop="30dp"
+            android:textColor="@android:color/white"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Already have account?"
+            android:textSize="@dimen/_12ssp"
+            android:textAlignment="center"
+            android:gravity="center_horizontal"
+            android:textColor="@color/white"
+            android:alpha="0.5"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/haveAccountLogin"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textSize="@dimen/_14ssp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginBottom="@dimen/_20sdp"/>
+
+    </LinearLayout>
+
+</ScrollView>
